@@ -42,17 +42,12 @@ li {
     left: calc(50% - 60px);
 }
 
-/* a {
-    color: #007bff;
-    text-decoration: none;
-    cursor: pointer;
-} */
-
 
 /* TOPBAR */
 #topbar {
     background-color: #fff;
     padding: 20px;
+
 }
 
 #topbar .contact-info i {
@@ -79,7 +74,14 @@ li {
     font-weight: 700;
     letter-spacing: 0.5px;
     font-family: "Poppins", sans-serif;
+}
+
+.myNav a{
     color: #2c4964;
+}
+
+.myNav .active{
+    color: #1977cc;
 }
 
 
