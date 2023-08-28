@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* overflow-x: hidden; */
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -45,9 +46,7 @@ li {
 
 /* TOPBAR */
 #topbar {
-    background-color: #fff;
-    padding: 20px;
-
+    background-color: #dde7f0;
 }
 
 #topbar .contact-info i {
