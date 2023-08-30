@@ -18,32 +18,86 @@
     <script src="https://kit.fontawesome.com/068972a724.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
         integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css">
-    <script src="swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="owl.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
+    <script src="dist/js/glightbox.js"></script>
+
+
+    <link rel="stylesheet" href="dist/css/glightbox.css" />
+    <script src="dist/js/glightbox.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 </head>
 
 <body>
     <!-- <header class="topbar"> -->
-        <nav id="topbar" class="d-flex align-items-center justify-content-center fixed-top py-2">
-            <div class="container d-flex align-items-center justify-content-between">
-                <div class="contact-info d-flex align-items-center justify-content-between">
-                    <i class="bi bi-envelope"></i> <a href="#">contact@example.com</a>
-                    <i class="bi bi-phone"></i> +1 5589 55488 55
-                </div>
-                <div class="d-none d-lg-flex topSocials align-items-center">
-                    <a href="#" class="twitter"><i class="bi bi-twitter "></i></a>
-                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                </div>
+    <div id="topbar" class="d-flex py-2 align-items-center">
+        <div class="container d-flex justify-content-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope"></i> <a href="#">contact@example.com</a>
+                <i class="bi bi-phone"></i> +1 5589 55488 55
             </div>
-        </nav>
-    <!-- </header> -->
+            <div class="d-none d-lg-flex social-linkz align-items-center ">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+            </div>
+        </div>
+    </div>
 
-    <nav class="navbar navbar-expand-lg pt-5 bg-white mt-3 myNav sticky-top">
+    <!--NavBAr-->
+    <header id="header" class="sticky-top">
+        <div class="container d-flex align-items-center">
+    
+          <h1 class="logo mr-auto"><a href="index.html">Medilab</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    
+          <nav class="nav-menu d-none d-lg-block ms-auto">
+            <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#departments">Departments</a></li>
+              <li><a href="#doctors">Doctors</a></li>
+              <li class="drop-down"><a href="">Drop Down</a>
+                <ul>
+                  <li><a href="#">Drop Down 1</a></li>
+                  <li class="drop-down"><a href="#">Deep Drop Down</a>
+                    <ul>
+                      <li><a href="#">Deep Drop Down 1</a></li>
+                      <li><a href="#">Deep Drop Down 2</a></li>
+                      <li><a href="#">Deep Drop Down 3</a></li>
+                      <li><a href="#">Deep Drop Down 4</a></li>
+                      <li><a href="#">Deep Drop Down 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Drop Down 2</a></li>
+                  <li><a href="#">Drop Down 3</a></li>
+                  <li><a href="#">Drop Down 4</a></li>
+                </ul>
+              </li>
+              <li><a href="#contact">Contact</a></li>
+    
+            </ul>
+          </nav><!-- .nav-menu -->
+    
+          <a href="#appointment" class="appointment-btn scrollto">Make an Appointment</a>
+    
+        </div>
+      </header>
+
+    <!-- <nav class="navbar navbar-expand-lg bg-white myNav sticky-top">
         <div class="container d-flex align-items-center justify-content-between">
-            <a class="navbar-brand fs-2 m-0 p-0 logo" href="#">Medilab</a>
+            <a class="navbar-brand logo" href="#">Medilab</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -95,19 +149,17 @@
                     </li>
                 </ul>
             </div>
-            <div class="but text-center">
-                <button class="btn btn-primary rounded-5 oiyn" type="button">Make an appointment</button>
-            </div>
+            <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span>
+                Appointment</a>
 
         </div>
-    </nav>
-
+    </nav> -->
 
     <section class="header">
-        <div class="container hero">
+        <div class="container">
             <h1>WELCOME TO MEDILAB</h1>
             <h2>We are team of talented designers making websites with Bootstrap</h2>
-            <button class="btn btn-primary rounded-5" type="button">GET STARTED</button>
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
         </div>
     </section>
 
@@ -115,110 +167,93 @@
     <section class="cards">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-12">
-                    <div class="card">
-                        <div class="card-body bigCard">
-                            <h3 class="cardTitle">Why Choose Medilab?</h3>
-                            <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in
-                                reprehenderit
-                                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus
-                                optio ad corporis.
-                            </p>
-                            <div class="text-center fs-6 text-dark">
-                                <button class="btn btn-primary rounded-pill fs-6" type="button">Learn more<i
-                                        class="bi  bi-chevron-right cardButton"></i></button>
+                <div class="col-lg-4 col-sm-12 d-flex align-items-stretch">
+                    <div class="content">
+                        <h3 class="cardTitle">Why Choose Medilab?</h3>
+                        <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in
+                            reprehenderit
+                            Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus
+                            optio ad corporis.
+                        </p>
+                        <div class="text-center fs-6">
+                            <a href="#" class="more-btn">Learn More<i class="bi  bi-chevron-right cardButton"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 d-flex align-items-stretch">
+                    <div class="boxIconzes d-flex flex-column justify-content-center">
+                        <div class="row">
+                            <div class="col-xl-4 d-flex align-items-stretch">
+                                <div class="boxIconz mt-4 mt-xl-0">
+                                    <box-icon name='receipt' color="#1977cc" size="md"></box-icon>
+                                    <h4>Corporis voluptates sit</h4>
+                                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
+                                        aliquip</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 d-flex align-items-stretch">
+                                <div class="boxIconz mt-4 mt-xl-0">
+                                    <box-icon color="#1977cc" size="md" name='cube-alt'></box-icon>
+                                    <h4>Ullamco laboris ladore pan</h4>
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 d-flex align-items-stretch">
+                                <div class="boxIconz mt-4 mt-xl-0">
+                                    <box-icon color="#1977cc" size="md" name='images'></box-icon>
+                                    <h4>Labore consequatur</h4>
+                                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-sm-12">
-                    <div class="card mt-5">
-                        <div class="card-body smallCard text-center">
-                            <box-icon name='receipt' color="#1977cc" size="md"></box-icon>
-                            <h4 class="cardTitle">Corporis voluptates sit</h4>
-                            <p class="cardText">Consequuntur sunt aut quasi enim aliquam quae harum pariatur
-                                laboris nisi ut aliquip
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-12">
-                    <div class="card mt-5">
-                        <div class="card-body smallCard text-center">
-                            <box-icon color="#1977cc" size="md" name='cube-alt'></box-icon>
-                            <h4 class="cardTitle">Ullamco laboris ladore pan</h4>
-                            <p class="cardText">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia deserunt</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-12">
-                    <div class="card mt-5">
-                        <div class="card-body smallCard text-center">
-                            <box-icon color="#1977cc" size="md" name='images'></box-icon>
-                            <h4 class="cardTitle">Labore consequatur</h4>
-                            <p class="cardText">Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores
-                                omnis facere
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
+
             </div>
         </div>
     </section>
 
 
-    <section id="about">
-        <div class="container text-center">
-            <div class="row align-items-start">
-                <div class="col-lg-6 col-sm-12">
-                    <img src="about.jpg" class="img-fluid" alt="...">
-                </div>
-                <div class="col-lg-6 col-sm-12 setionTitle">
-                    <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-                    <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et
-                        sed
-                        minima temporibus laudantium. Soluta voluptate sed facere corporis dolores
-                        excepturi.
-                        Libero
-                        laboriosam sint et id nulla tenetur. Suscipit aut voluptate.
-                    </p>
-                    <div class="row">
-                        <div class="col-1 myRow">
-                            <box-icon name='fingerprint' size="md" color="#1977cc"></box-icon>
-                        </div>
-                        <div class="col-8 myRow2">
-                            <h3>Lorem Ipsum</h3>
-                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
-                                sint
-                                occaecati cupiditate non provident</p>
+    <section id="about" class="about">
+        <div class="container-fluid">
 
-                        </div>
+            <div class="row">
+                <div
+                    class="col-lg-5 col-sm-12 d-flex leftPics justify-content-center align-items-stretch position-relative">
+                    <!-- <img src="about.jpg" class="img-fluid" alt="..."> -->
+                </div>
+                <div
+                    class="col-lg-7 boxIconzes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+                    <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
+                    <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima
+                        temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam
+                        sint et id nulla tenetur. Suscipit aut voluptate.</p>
+
+                    <div class="boxIconz">
+                        <div class="icon"><i class="fa-solid fa-fingerprint"></i></div>
+                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi sint occaecati cupiditate non provident</p>
                     </div>
-                    <div class="row">
-                        <span class="col-1 myRow">
-                            <box-icon name='gift' size="md" color="#1977cc"></box-icon>
-                        </span>
-                        <div class="col-8 myRow2">
-                            <h3>Nemo Enim</h3>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                praesentium
-                                voluptatum deleniti atque</p>
-                        </div>
+
+                    <div class="boxIconz">
+                        <div class="icon"><i class="fa-solid fa-gift"></i></div>
+                        <h4 class="title"><a href="">Nemo Enim</a></h4>
+                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium voluptatum deleniti atque</p>
                     </div>
-                    <div class="row">
-                        <div class="col-1 myRow">
-                            <box-icon name='atom' color="#1977cc" size="md"></box-icon>
-                        </div>
-                        <div class="col-8 myRow2">
-                            <h3>Dine Pad</h3>
-                            <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit.
-                                Sunt
-                                aut
-                                deserunt minus aut eligendi omnis</p>
-                        </div>
+
+                    <div class="boxIconz">
+                        <div class="icon"><i class="fa-solid fa-atom"></i></div>
+                        <h4 class="title"><a href="">Dine Pad</a></h4>
+                        <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis
+                            odit. Sunt aut deserunt minus aut eligendi omnis</p>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -228,31 +263,31 @@
     <section class="iconsCard">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-sm-12 my-3">
+                <div class="col-lg-3 col-sm-12 mb-3">
                     <div class="iconBoxxx">
                         <i class=" iconxx fa-solid fa-user-doctor"></i><br>
-                        <span>85</span><br>
+                        <span class="counter">85</span>
                         <p>Doctors</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-12 my-3">
+                <div class="col-lg-3 col-sm-12 mb-3">
                     <div class="iconBoxxx">
                         <i class="fa-solid fa-hospital"></i><br>
-                        <span>18</span><br>
+                        <span class="counter">18</span>
                         <p>Departments</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-12 my-3">
+                <div class="col-lg-3 col-sm-12 mb-3">
                     <div class="iconBoxxx">
                         <i class="fa-solid fa-flask"></i><br>
-                        <span>12</span><br>
+                        <span class="counter">12</span>
                         <p>Research Labs</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-12 my-3">
+                <div class="col-lg-3 col-sm-12 mb-3">
                     <div class="iconBoxxx">
                         <i class="fa-solid fa-award"></i><br>
-                        <span>150</span><br>
+                        <span class="counter">150</span>
                         <p>Awards</p>
                     </div>
                 </div>
@@ -261,7 +296,7 @@
     </section>
 
 
-    <section id="services">
+    <section id="services" class="services">
         <div class="container">
             <div class="section-title">
                 <h2>Services</h2>
@@ -269,8 +304,9 @@
                     consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
                     fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
-            <div class="row mb-5">
-                <div class="col-lg-4 col-sm-12">
+
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 d-flex align-items-stretch">
                     <div class="boxIconz">
                         <div class="icon">
                             <i class="fa-solid fa-heartbeat"></i>
@@ -281,7 +317,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12 d-flex align-items-stretch">
                     <div class="boxIconz">
                         <span class="icon">
                             <i class="fa-solid fa-pills"></i>
@@ -294,7 +330,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12 d-flex align-items-stretch">
                     <div class="boxIconz">
                         <div class="icon">
                             <i class="fa-solid fa-hospital-user"></i>
@@ -307,9 +343,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12 d-flex align-items-stretch mt-3">
                     <div class="boxIconz">
                         <div class="icon">
                             <i class="fa-solid fa-dna"></i>
@@ -321,7 +355,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12 d-flex align-items-stretch mt-3">
                     <div class="boxIconz">
                         <div class="icon">
                             <i class="fa-solid fa-wheelchair"></i>
@@ -334,7 +368,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12 d-flex align-items-stretch mt-3">
                     <div class="boxIconz">
                         <div class="icon">
                             <i class="fa-solid fa-notes-medical"></i>
@@ -348,19 +382,18 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
 
-    <section class="appointment">
+    <section id="appointment" class="appointment">
         <div class="container">
-            <div class="appointment-title">
+            <div class="section-title">
                 <h2>Make an Appointment</h2>
                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
                     consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
                     fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
-            <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+            <form action="#" method="post" role="form" class="php-email-form">
                 <div class="row">
                     <div class="col-md-4 form-group">
                         <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
@@ -410,7 +443,7 @@
                     <div class="validate"></div>
                 </div>
                 <div class="text-center mt-3">
-                    <button class="btn btn-primary rounded-5 text-center" type="button">Make an Appointment</button>
+                    <button type="submit">Make an Appointment</button>
                 </div>
             </form>
         </div>
@@ -630,9 +663,9 @@
                     consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
                     fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
-            <div class="faq-list">
+            <div class="faq-list w-100">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item my-3">
+                    <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed myBTN" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
@@ -643,13 +676,15 @@
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body borr">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
-                                id
-                                volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
-                                porttitor rhoncus dolor purus non.</div>
+                            <div class="accordion-body borr">
+                                <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
+                                    id
+                                    volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
+                                    porttitor rhoncus dolor purus non.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="accordion-item my-3">
+                    <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed myBTN" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseTwo" aria-expanded="false"
@@ -660,14 +695,17 @@
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body borr">Dolor sit amet consectetur adipiscing elit pellentesque
-                                habitant
-                                morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris
-                                ultrices eros in cursus turpis massa tincidunt dui.</div>
+                            <div class="accordion-body borr">
+                                <p>Dolor sit amet consectetur adipiscing elit pellentesque
+                                    habitant
+                                    morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
+                                    scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+                                    Mauris
+                                    ultrices eros in cursus turpis massa tincidunt dui.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="accordion-item my-3">
+                    <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed myBTN" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
@@ -678,13 +716,16 @@
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body borr">Eleifend mi in nulla posuere sollicitudin aliquam ultrices
-                                sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit
-                                amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
-                                convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</div>
+                            <div class="accordion-body borr">
+                                <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                                    sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit
+                                    amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis
+                                    convallis
+                                    convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="accordion-item my-3">
+                    <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed myBTN" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
@@ -696,13 +737,17 @@
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body borr">Molestie a iaculis at erat pellentesque adipiscing commodo.
-                                Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.
-                                Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus
-                                in.</div>
+                            <div class="accordion-body borr">
+                                <p>Molestie a iaculis at erat pellentesque adipiscing commodo.
+                                    Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas
+                                    accumsan.
+                                    Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis
+                                    cursus
+                                    in.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="accordion-item my-3">
+                    <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed myBTN" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
@@ -714,10 +759,13 @@
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body borr">Eleifend mi in nulla posuere sollicitudin aliquam ultrices
-                                sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit
-                                amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
-                                convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</div>
+                            <div class="accordion-body borr">
+                                <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                                    sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit
+                                    amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis
+                                    convallis
+                                    convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -725,54 +773,90 @@
         </div>
     </section>
 
-    <div id="carouselExampleAutoplaying" class="carousel slide testimonials" data-bs-ride="carousel">
-        <div class="carousel-inner testimonial-wrap">
-            <div class="carousel-item active testimonial-item">
-                <img src="testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+
+            <div class="owl-carousel testimonials-carousel">
+
+                <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                        <img src="testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                        <h3>Saul Goodman</h3>
+                        <h4>Ceo &amp; Founder</h4>
+                        <p>
+                            <i class="fa-solid fa-quote-left quote-icon-left"></i>
+                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                            <i class="fa-solid fa-quote-right quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                        <img src="testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                        <h3>Sara Wilsson</h3>
+                        <h4>Designer</h4>
+                        <p>
+                            <i class="fa-solid fa-quote-left quote-icon-left"></i>
+                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum
+                            eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
+                            culpa.
+                            <i class="fa-solid fa-quote-right quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                        <img src="testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                        <h3>Jena Karlis</h3>
+                        <h4>Store Owner</h4>
+                        <p>
+                            <i class="fa-solid fa-quote-left quote-icon-left"></i>
+                            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
+                            minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                            <i class="fa-solid fa-quote-right quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                        <img src="testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                        <h3>Matt Brandon</h3>
+                        <h4>Freelancer</h4>
+                        <p>
+                            <i class="fa-solid fa-quote-left quote-icon-left"></i>
+                            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
+                            velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
+                            veniam.
+                            <i class="fa-solid fa-quote-right quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                        <img src="testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                        <h3>John Larson</h3>
+                        <h4>Entrepreneur</h4>
+                        <p>
+                            <i class="fa-solid fa-quote-left quote-icon-left"></i>
+                            Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam
+                            enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore
+                            nisi cillum quid.
+                            <i class="fa-solid fa-quote-right quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
             </div>
-            <div class="carousel-item testimonial-item">
-                <img src="testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum
-                    eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
-                    culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-            </div>
-            <div class="carousel-item testimonial-item">
-                <img src="testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
-                    minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-            </div>
+
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    </section>
+
 
     <section id="gallery" class="gallery">
         <div class="container">
@@ -790,7 +874,7 @@
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="gallery/gallery-1.jpg" class="galelry-lightbox">
+                        <a href="gallery/gallery-1.jpg" class="glightbox">
                             <img src="gallery/gallery-1.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
@@ -798,7 +882,7 @@
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="gallery/gallery-2.jpg" class="galelry-lightbox">
+                        <a href="gallery/gallery-2.jpg" class="glightbox">
                             <img src="gallery/gallery-2.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
@@ -806,7 +890,7 @@
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="gallery/gallery-3.jpg" class="galelry-lightbox">
+                        <a href="gallery/gallery-3.jpg" class="glightbox">
                             <img src="gallery/gallery-3.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
@@ -814,7 +898,7 @@
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="gallery/gallery-4.jpg" class="galelry-lightbox">
+                        <a href="gallery/gallery-4.jpg" class="glightbox">
                             <img src="gallery/gallery-4.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
@@ -822,7 +906,7 @@
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="gallery/gallery-5.jpg" class="galelry-lightbox">
+                        <a href="gallery/gallery-5.jpg" class="glightbox">
                             <img src="gallery/gallery-5.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
@@ -830,7 +914,7 @@
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="gallery/gallery-6.jpg" class="galelry-lightbox">
+                        <a href="gallery/gallery-6.jpg" class="glightbox">
                             <img src="gallery/gallery-6.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
@@ -838,7 +922,7 @@
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="gallery/gallery-7.jpg" class="galelry-lightbox">
+                        <a href="gallery/gallery-7.jpg" class="glightbox">
                             <img src="gallery/gallery-7.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
@@ -846,7 +930,7 @@
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="gallery/gallery-8.jpg" class="galelry-lightbox">
+                        <a href="gallery/gallery-8.jpg" class="glightbox">
                             <img src="gallery/gallery-8.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
@@ -866,6 +950,13 @@
                     consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
                     fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
+        </div>
+
+        <div>
+            <iframe style="border:0; width: 100%; height: 350px;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3200903270103!2d3.9372330111207896!3d7.429786392549983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039ed8ad4acd1ad%3A0xbc651f97fa1024c0!2sAluSoft%20Technologies%20Ltd.!5e0!3m2!1sen!2sng!4v1693350633984!5m2!1sen!2sng"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div class="container">
@@ -895,17 +986,17 @@
 
                 </div>
 
-                <div class="col-lg-8 mt-5 mt-lg-0">
+                <div class="col-lg-8 mt-lg-0">
 
                     <form action="#" method="post" role="form" class="php-email-form myForm">
                         <div class="row">
-                            <div class="col-sm-12">
+                            <div class="col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control" id="name"
                                         placeholder="Your Name" required="">
                                 </div>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-12 col-md-6">
                                 <div class="form-group  mt-3 mt-md-0">
                                     <input type="email" class="form-control" name="email" id="email"
                                         placeholder="Your Email" required="">
@@ -920,9 +1011,7 @@
                             <textarea class="form-control" name="message" rows="5" placeholder="Message"
                                 required=""></textarea>
                         </div>
-                        <div class="text-center">
-                            <button class="btn btn-primary rounded-5" type="button">Send Message</button>
-                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
                     </form>
 
                 </div>
@@ -938,7 +1027,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-3 col-sm-12 footer-contact">
+                    <div class="col-lg-3 col-md-6 footer-contact">
                         <h3>Medilab</h3>
                         <p>
                             A108 Adam Street <br>
@@ -949,44 +1038,33 @@
                         </p>
                     </div>
 
-                    <div class="col-lg-2 col-sm-12 footer-links">
+                    <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><box-icon color="#1c84e3" size="xsm" name='chevron-right'></box-icon><a
-                                    href="#">Home</a></li>
-                            <li><box-icon color="#1c84e3" size="xsm" name='chevron-right'></box-icon><a href="#">About
-                                    us</a></li>
-                            <li><box-icon color="#1c84e3" size="xsm" name='chevron-right'></box-icon><a
-                                    href="#">Services</a></li>
-                            <li><box-icon color="#1c84e3" size="xsm" name='chevron-right'></box-icon><a href="#">Terms
-                                    of service</a></li>
-                            <li><box-icon color="#1c84e3" size="xsm" name='chevron-right'></box-icon><a href="#">Privacy
-                                    policy</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-sm-12 footer-links">
+                    <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><box-icon color="#1c84e3" size="xsm" name='chevron-right'></box-icon><a href="#">Web
-                                    Design</a></li>
-                            <li><box-icon color="#1c84e3" size="xsm" name='chevron-right'></box-icon><a href="#">Web
-                                    Development</a></li>
-                            <li><box-icon color="#1c84e3" size="xsm" name='chevron-right'></box-icon><a href="#">Product
-                                    Management</a></li>
-                            <li><box-icon color="#1c84e3" size="xsm" name='chevron-right'></box-icon><a
-                                    href="#">Marketing</a></li>
-                            <li><box-icon color="#1c84e3" size="xsm" name='chevron-right'></box-icon><a href="#">Graphic
-                                    Design</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
                         </ul>
                     </div>
 
-                    <div class="col-lg-4 col-sm-12 footer-newsletter">
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>Join Our Newsletter</h4>
                         <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
                         <form action="" method="post">
-                            <input type="email" name="email">
-                            <input type="submit" value="Subscribe">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
                     </div>
 
@@ -994,27 +1072,33 @@
             </div>
         </div>
 
-        <div class="container d-md-flex py-4">
+        <div class="container d-md-flex py-4 d-flex ">
 
-            <div class="me-md-auto text-center text-md-start">
+            <div class="mr-md-auto text-center text-md-left me-auto">
                 <div class="copyright">
-                    © Copyright <span class="fw-bold">Medilab</span>. All Rights Reserved
+                    &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Cloned by <a href="#">ThatITBabe &copy;</a>
                 </div>
             </div>
-            <div class="social-links text-center">
-                <a href="#" class="twitter social-footer"><box-icon color="#fff" name='twitter'
-                        type='logo'></box-icon></a>
-                <a href="#" class="facebook social-footer"><box-icon color="#fff" name='facebook'
-                        type='logo'></box-icon></i></a>
-                <a href="#" class="instagram social-footer"><box-icon color="#fff" name='instagram'
-                        type='logo'></box-icon></a>
-                <a href="#" class="google-plus social-footer"><box-icon color="#fff" name='skype'
-                        type='logo'></box-icon></i></a>
-                <a href="#" class="linkedin social-footer"><box-icon color="#fff" name='linkedin'
-                        type='logo'></box-icon></i></a>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="fa-brands fa-skype"></i></i></a>
+                <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </footer>
+
+
+
+    <a href="#" id="back-to-top" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- <div id=""></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up"></i></a> -->
+
+    <script src="script.js"></script>
 </body>
 
 </html>
